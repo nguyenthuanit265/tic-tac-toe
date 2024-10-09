@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Enhanced Tic-Tac-Toe Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an enhanced version of the classic Tic-Tac-Toe game, built with React. It includes several advanced
+features that go beyond the basic game mechanics.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Basic Tic-Tac-Toe Gameplay**: Play the classic game of Tic-Tac-Toe against another player.
+2. **Move History**: Keep track of all moves made during the game.
+3. **Time Travel**: Jump to any previous state of the game board.
+4. **Move Locations**: Display the location (row, col) for each move in the move history list.
+5. **Sort Moves**: Toggle between ascending and descending order of moves in the history list.
+6. **Highlight Winning Squares**: When a player wins, the three squares that caused the win are highlighted.
+7. **Draw Detection**: The game detects and announces when the result is a draw.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Ensure you have [Node.js](https://nodejs.org/) installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory in your terminal.
+4. Run the following command to install the necessary dependencies:
 
-### `npm test`
+   ```
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+After installation, you can start the development server by running:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your
+browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Play
 
-### `npm run eject`
+1. The game starts with Player X. Click on any square to make a move.
+2. Players take turns to place their marks (X or O) on empty squares.
+3. The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins the game.
+4. If all squares are filled and no player has won, the game is a draw.
+5. Use the move history list to jump to any previous state of the game.
+6. Click the "Sort Ascending/Descending" button to change the order of moves in the history list.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This app is deployed using GitHub Pages. You can view the live version
+at: [https://yourusername.github.io/your-repo-name](https://yourusername.github.io/your-repo-name)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To deploy your own version:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Fork this repository.
+2. Clone your forked repository to your local machine.
+3. Install dependencies with `npm install`.
+4. Install gh-pages with `npm install gh-pages --save-dev`.
+5. In `package.json`, add:
+   ```json
+   "homepage": "https://yourusername.github.io/your-repo-name",
+   ```
+   And in the "scripts" section:
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+   ```
+6. Commit and push these changes.
+7. Run `npm run deploy`.
+8. Go to your repository settings on GitHub, scroll to "GitHub Pages", and select "gh-pages branch" as the source.
 
-## Learn More
+Your app should now be live at the URL you specified in the `homepage` field.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[... rest of the previous content ...]
