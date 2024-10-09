@@ -1,0 +1,38 @@
+.board-row {
+    display: flex;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #999;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-right: -2px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.square:focus {
+    outline: none;
+}
+
+/* Remove any potential border-radius */
+.square:first-child,
+.square:last-child {
+    border-radius: 0;
+}
+
+.board {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.square.winning {
+    background-color: yellow;
+}
