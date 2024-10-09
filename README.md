@@ -1,3 +1,5 @@
+## Link host: https://nguyenthuanit265.github.io/tic-tac-toe
+
 # Enhanced Tic-Tac-Toe Game
 
 This project is an enhanced version of the classic Tic-Tac-Toe game, built with React. It includes several advanced
@@ -72,4 +74,3 @@ To deploy your own version:
 
 Your app should now be live at the URL you specified in the `homepage` field.
 
-[... rest of the previous content ...]
