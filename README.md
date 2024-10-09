@@ -74,3 +74,6 @@ To deploy your own version:
 
 Your app should now be live at the URL you specified in the `homepage` field.
 
+### Localhost
+
+![Screenshot 2024-10-09 at 20.27.14.png](public/Screenshot%202024-10-09%20at%2020.27.14.png)
